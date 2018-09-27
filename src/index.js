@@ -1,8 +1,7 @@
 // PLEASE DON'T change function name
 module.exports = function makeExchange(currency) {
     // Your code goes here!
-    // Return an object containing the minimum number of coins needed to make change
-    
+    // Return an object containing the minimum number of coins needed to make change    
     let coin, pair = {}, exchangedMoney = {};
     const arrayOfCoins = [50, 25, 10, 5, 1];
     const arrayOfKeys = ['H', 'Q', 'D', 'N', 'P'];
@@ -20,8 +19,6 @@ module.exports = function makeExchange(currency) {
             currency = currency % element;
         }
     });
-
-   
 
     return exchangedMoney;
 }
